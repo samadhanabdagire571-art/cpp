@@ -2,26 +2,18 @@
 using namespace std;
 
 int main() {
+    int a, b, temp;
 
-    float length , width;
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
 
-    cout << "Enter length: ";
-    cin >> length;
+    cout << "Before swapping: a = " << a << ", b = " << b << endl;
 
+    temp = a;
+    a = b;
+    b = temp;
 
-    cout << "Enter width: ";
-    cin >> width;
-
-
-    float area = length * width;
-    float perimeter = 2 * (length + width);
-
-
-    cout << "Area of Rectangle = " << area << endl;
-    cout << "Perimeter of Rectangle = " << perimeter << endl;
-
+    cout << "After swapping: a = " << a << ", b = " << b << endl;
 
     return 0;
-
-    
 }
